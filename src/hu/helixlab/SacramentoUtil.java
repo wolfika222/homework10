@@ -8,18 +8,31 @@ import java.util.ArrayList;
  */
 public class SacramentoUtil {
 
-    public void printCSVFromSacramentoList(ArrayList<Sacramento> arrayList, String path){
+    public void printCSVFromSacramentoList(ArrayList<Sacramento> arrayList, String path) {
 
         try {
             FileWriter fw = new FileWriter(path);
             for (Sacramento item : arrayList
-                 ) {
+                    ) {
                 fw.write(String.valueOf(item));
             }
             fw.close();
 
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
+        }
+    }
+
+    public void findBiggestGridByDistricts(ArrayList<Sacramento> arrayList) {
+
+    }
+
+    public void getStreets(ArrayList<Sacramento> arrayList) {
+
+        for (Sacramento item : arrayList
+                ) {
+            if (item.getAddress().contains(" ST")) ;
+            System.out.println(item);
         }
     }
 }

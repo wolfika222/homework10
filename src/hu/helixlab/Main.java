@@ -36,5 +36,6 @@ public class Main {
         }
 
         sacramentoUtil.printCSVFromSacramentoList(sacramento,"C:\\Users\\Hp_Workplace\\IdeaProjects\\homework10\\doksi\\Sacramento.csv" );
+        sacramentoUtil.getStreets(sacramento);
     }
 }
