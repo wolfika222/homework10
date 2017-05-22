@@ -35,8 +35,9 @@ public class Main {
             System.out.println(e);
         }
 
-        sacramentoUtil.printCSVFromSacramentoList(sacramento,"C:\\Users\\Hp_Workplace\\IdeaProjects\\homework10\\doksi\\Sacramento.csv" );
-        sacramentoUtil.getStreets(sacramento);
-        System.out.println(sacramentoUtil.countCrimeType(sacramento));
+        //sacramentoUtil.printCSVFromSacramentoList(sacramento,"C:\\Users\\Hp_Workplace\\IdeaProjects\\homework10\\doksi\\Sacramento.csv" );
+        sacramentoUtil.findBiggestGridByDistricts(sacramento);
+        //sacramentoUtil.getStreets(sacramento);
+        //System.out.println(sacramentoUtil.countCrimeType(sacramento));
     }
 }

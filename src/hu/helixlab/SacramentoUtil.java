@@ -2,6 +2,8 @@ package hu.helixlab;
 
 import java.io.FileWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Hp_Workplace on 2017. 05. 21..
@@ -25,6 +27,22 @@ public class SacramentoUtil {
 
     public void findBiggestGridByDistricts(ArrayList<Sacramento> arrayList) {
 
+        HashMap<String, Sacramento> arrayListHashMap = new HashMap<>();
+
+        for (Sacramento item : arrayList
+                ) {
+            if (arrayListHashMap.containsKey(item.getGrid()) == true) {
+                if (arrayListHashMap.get(item.getDistrict()).getGrid() < item.getGrid()) {
+                    arrayListHashMap.put(item.getDistrict(), item);
+                }
+            } else {
+                arrayListHashMap.put(item.getDistrict(), item);
+            }
+        }
+        for (Map.Entry item : arrayListHashMap.entrySet()
+                ) {
+            System.out.println(item.getValue());
+        }
     }
 
     public void getStreets(ArrayList<Sacramento> arrayList) {
