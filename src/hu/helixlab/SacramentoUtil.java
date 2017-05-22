@@ -35,4 +35,18 @@ public class SacramentoUtil {
             System.out.println(item);
         }
     }
+
+    public int countCrimeType(ArrayList<Sacramento> arrayList) {
+
+        int db = 0;
+
+        for (Sacramento item : arrayList) {
+            if (item.getCrimedescr().contains("VANDALISM")) {
+
+                db++;
+            }
+        }
+
+        return db;
+    }
 }
