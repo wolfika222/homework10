@@ -31,8 +31,9 @@ public class SacramentoUtil {
 
         for (Sacramento item : arrayList
                 ) {
-            if (item.getAddress().contains(" ST")) ;
-            System.out.println(item);
+            if (item.getAddress().contains(" ST")) {
+                System.out.println(item);
+            }
         }
     }
 
