@@ -87,7 +87,7 @@ public class SacramentoUtil {
         int db = 0;
 
         for (Sacramento item : arrayList) {
-            if (item.getCrimedescr().contains("VANDALISM")) {
+            if (item.getCrimedescr().toUpperCase().contains("VANDALISM")) {
 
                 db++;
             }
