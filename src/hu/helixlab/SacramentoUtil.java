@@ -43,7 +43,6 @@ public class SacramentoUtil {
                 fw.append(String.valueOf(item.getLatitude()));
                 fw.append(COMMA_DELIMITER);
                 fw.append(String.valueOf(item.getLongitude()));
-                fw.append(COMMA_DELIMITER);
                 fw.append(NEW_LINE_SEPARATOR);
             }
             fw.close();
