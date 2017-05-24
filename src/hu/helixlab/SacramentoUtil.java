@@ -76,7 +76,7 @@ public class SacramentoUtil {
 
         for (Sacramento item : arrayList
                 ) {
-            if (item.getAddress().contains(" ST")) {
+            if (item.getAddress().toUpperCase().contains(" ST")) {
                 System.out.println(item);
             }
         }
